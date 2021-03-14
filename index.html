@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Carousel Template · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/carousel.css">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dream Cut</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About Us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Price">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img1">
+
+          </div>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 class="mb-5">Welcome</h1>
+              <p class="mrgtop">We have the very best barbers in the area. Learn more about us!</p>
+              <p class="mrgtop"><a class="btn btn-lg btn-primary" href="#About Us" role="button">Click Here</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img2">
+
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="mb-5">Affordable Prices</h1>
+              <p class="mb-5">Stylish Creative Affordable. For creative and inspirational styles, head to our salon for a fresh and vibrant look.
+                Dream Cut is the next generation in hair care and the future of hair salons.</p>
+              <p class="mb-5"><a class="btn btn-lg btn-primary" href="#Price" role="button">View Prices</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img3">
+
+          </div>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 class="mb-5">Book An Appointment</h1>
+              <p class="mb-5">Due to covid regulations we are now operating on an appointment base only, with only one client per time.</p>
+              <p class="mb-5"><a class="btn btn-lg btn-primary" href="#Contact" role="button">Contact Us</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <!-- About Us Section
+  ================================================== -->
+
+
+    <div class="container marketing col-lg-12">
+      <hr id="About Us" class="featurette-divider">
+
+      <div class="row">
+        <h1 class="mb-5">About Us</h1>
+        <p class="mrgtop">
+
+          Located on Harrow Road, Dream Cut is a family run business which offers the finest cuts and shaves for men in London. With over 4 years of experience,
+          Dream Cut provides a fun, friendly and stylish atmosphere with a wide selection of services for you to choose from.
+
+          Our barbers are fully qualified and take time to ensure that our customers are fully satisfied with the service we provide and that your hair is cut and
+          styled to your desired preferences. If its a shave or cut that you need then look no further and come to Fade Blade. We provide a special environment
+          designed to embrace a man’s masculinity, minus all the macho. Simply put, we are the “Better Barbershop” that offers an inviting environment to guys who
+          value quality, particularly with their grooming. Whether you’re looking for a Classic Cut or prefer to go the extra mile with a straight razor face shave
+          or beard trim, we’ll make sure you look great and feel even better.
+
+        </p>
+
+        <p class="mrgtop">
+          We’re dedicated to empowering men to look and feel fantastic, to give them the confidence and self-esteem to take on any situation in their stride - whether it’s important meetings,
+          or social events, nights out, dating, or your wedding - we'll help you make your social impact count. we offer a family-friendly atmosphere that is perfect for all ages. We invite
+          dads to bring their sons in for a memory-making barbershop experience that they’ll look forward to every time. For our young customers under the age of 12, we offer junior haircuts
+          and will make sure they enjoy their experience and love their cool new look.
+
+        </p>
+
+        <p class="mrgtop">
+          For the past 30 years our motto has been to provide quality, good looking men’s haircuts at affordable prices … all in the relaxing and welcoming environment of our College Park based barber shop.
+          Every service starts with an in-depth consultation which helps your barber deliver the perfect service, so you can look and feel fantastic and make the right impression, every time.
+          Below is the price list for the men’s and kid’s haircutting and hairstyling services Dream Cut offers:
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+    <div class="container marketing col-lg-12">
+      <hr id="Price" class="featurette-divider">
+
+      <!-- Price Table -->
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl1">
+          <h2 class="fnt">Service</h2>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl1">
+          <h2 class="fnt">Pricing</h2>
+        </div>
+
+      </div>
+
+      <!-- Table Section -->
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 undl">
+          <p class="fnt2">Haircut</p>
+        </div>
+
+        <div class="col-lg-6 ps2 undl">
+          <p class="fnt2">£8</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Clippercut</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£8</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Wash & Cut</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£10</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Zero/Skin Fade</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£12</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Juniors Under 16</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£5</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Student</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£8</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Senior Over 65</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£10</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Beard Trim</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£8</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Beard Shape</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£8</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Beard Trim & Shape </p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£12</p>
+        </div>
+
+      </div>
+
+      <div class="row pdbot">
+
+        <div class="col-lg-6 ps1 fntundl">
+          <p class="fnt2">Hot Towel Wet Shave</p>
+        </div>
+
+        <div class="col-lg-6 ps2 fntundl">
+          <p class="fnt2">£15</p>
+        </div>
+
+      </div>
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Skin Fade Haircut / Bald Fade Haircut. <span class="text-muted">It’ll only be 30 minutes.</span></h2>
+          <p class="lead">If you’re looking for a fade haircut but aren’t sure exactly how you want it cut, try a bald fade on the sides with one of these top short men’s hairstyles.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://images.unsplash.com/photo-1559895166-835a49fb90d8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhcmJlcnNob3B8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" height="500" width="360">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Kids/Juniors haircuts. <span class="text-muted">Price is only £5.</span></h2>
+          <p class="lead">Bring your child in and get the cheapest haircut on the block. We are always happy to help out the community as we know how tough times are at the moment.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="https://images.unsplash.com/photo-1598887142728-f80b6e64821b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGJhcmJlcnNob3B8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" height="350" width="490">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Beard Styles For Men. <span class="text-muted">Come on by and book an appointment.</span></h2>
+          <p class="lead"> If you’re looking for a fade haircut but aren’t sure exactly how you want it cut, try a bald fade on the sides with one of these top short men’s hairstyles..</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://images.unsplash.com/photo-1599351431618-317f6a5f9a6b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJhcmJlcnNob3B8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" height="350" width="490">
+
+        </div>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- About Us Section
+  ================================================== -->
+
+
+    <div class="container marketing col-lg-12">
+
+      <hr id="Contact" class="featurette-divider">
+
+      <div class="row">
+
+        <div class="col-6">
+          <h1 class="mb-5">Contact Us</h1>
+        </div>
+        <div class="col-6">
+          <h1 class="mb-5 ms-2">Social</h1>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="row col-12">
+            <div class="col-3 ps2">
+              <img class="img4 mrgtop"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTExLjk5OSA1MTEuOTk5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTEuOTk5IDUxMS45OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0NEM4Njg7IiBkPSJNNTExLjg3OSw0NzUuNjg1bC00MC4yMjQtMjIxLjYxMWMtMC40MDEtMi4yMTItMS43NzMtNC4xMjgtMy43MzktNS4yMjFsLTEwMS4yNDItNTYuMzENCgkJYy0xLjMxNC0wLjczMi0yLjc4Ny0xLjAyMy00LjIzNC0wLjkxMWwxOC40MTksMjM3LjYwOGwtMC42MTcsMC4yNzZsMTIxLjE2NCw1NC4zNTdjMC45ODYsMC40NDEsMi4wMzQsMC42NTksMy4wNzcsMC42NTkNCgkJYzEuNjUxLDAsMy4yODctMC41NDMsNC42MzItMS41OTZDNTExLjMxMyw0ODEuMjIsNTEyLjM3Niw0NzguNDI4LDUxMS44NzksNDc1LjY4NXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDRDODY4OyIgZD0iTTI1NiwyNDYuMzc1bC0xMDMuNTQ1LTUzLjkzMWMtMS4yNDEtMC42NDctMi42MTctMC45MTEtMy45NzItMC44Mg0KCQljMC4zNTktMC4wMjIsMC43Mi0wLjAyLDEuMDc4LDAuMDA4bC0xOC40MTksMjM3LjYwOGwxMjEuNzgxLDU0LjYzNGMwLjk4MywwLjQ0LDIuMDMyLDAuNjU5LDMuMDc3LDAuNjU5bDAsMFYyNDYuMzc1eiIvPg0KPC9nPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzRDRTE2NjsiIGQ9Ik0xNDkuNTYsMTkxLjYzM2MtMS40NDctMC4xMTItMi45MiwwLjE3OS00LjIzNCwwLjkxbC0xMDEuMjQzLDU2LjMxDQoJCWMtMS45NjYsMS4wOTMtMy4zMzgsMy4wMDgtMy43MzksNS4yMjFMMC4xMjEsNDc1LjY4NWMtMC40OTgsMi43NDIsMC41NjYsNS41MzQsMi43NjMsNy4yNTJjMS4zNDcsMS4wNTMsMi45ODIsMS41OTYsNC42MzIsMS41OTYNCgkJYzEuMDQzLDAsMi4wOTItMC4yMTcsMy4wNzctMC42NTlsMTIwLjUwNC01NC4wNjFMMTQ5LjU2LDE5MS42MzN6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzRDRTE2NjsiIGQ9Ik0zNjIuNDM5LDE5MS42MjhjLTAuOTk2LDAuMDc3LTEuOTgxLDAuMzQyLTIuODk0LDAuODE4TDI1NiwyNDYuMzc2djIzOC4xNThjMCwwLDAsMCwwLjAwMSwwDQoJCWMxLjA0NSwwLDIuMDk1LTAuMjE4LDMuMDc3LTAuNjU5bDEyMS43ODEtNTQuNjM0TDM2Mi40MzksMTkxLjYyOHoiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRkRCNTY7IiBwb2ludHM9IjI4LjE1NCwzMjEuMjMzIDE5Ljk4MywzNjYuMjUyIDE0MC45NzcsMzAyLjM0NiAxNDMuNzg2LDI2Ni4xMDcgMTQ0LjI1MiwyNjAuMDk3ICIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0E4RUVGQzsiIGQ9Ik0xNDIuMDY2LDI4OC4yOTRsLTEuMDg5LDE0LjA1MkwxOS45ODMsMzY2LjI1MkwwLjEyMSw0NzUuNjg1Yy0wLjQ5OCwyLjc0MiwwLjU2Niw1LjUzNCwyLjc2Myw3LjI1Mg0KCWMxLjM0NywxLjA1MywyLjk4MiwxLjU5Niw0LjYzMiwxLjU5NmMxLjA0MywwLDIuMDkyLTAuMjE3LDMuMDc3LTAuNjU5bDEyMC41MDQtNTQuMDYxTDE0Mi4wNjYsMjg4LjI5NEwxNDIuMDY2LDI4OC4yOTR6Ii8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojRkZCQjI0OyIgcG9pbnRzPSIyNTYuMDMsMjc2LjA4IDE0NC4yNTIsMjYwLjA5NyAxNDAuOTc3LDMwMi4zNDYgMjU2LDQ3Ny4wMjUgMjU2LDQxMy41MDcgMTg3LjM2MywzMDUuNDI5IA0KCQkyNTYuMDMsMzEzLjY0MiAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGQkIyNDsiIHBvaW50cz0iNDU5Ljk0NiwyNDQuNDIxIDQxMS4zMTEsMjE3LjM3IDM2NS4yNjksMjI4LjEyOCAzNjUuODQ1LDIzNS41NjQgMzY4LjExOSwyNjQuODk4IAkiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRkRCNTY7IiBwb2ludHM9IjM3Mi4yMDIsMzE3LjU3NiAzNjcuODQyLDI2MS4zMjcgMzY3Ljg0MiwyNjEuMzI3IDM2NS4yNjksMjI4LjEyOCAyNTYuMDMsMjc2LjA4IA0KCTI1Ni4wMywzMTMuNjQyIDMyNy4zODYsMjgyLjYxMiAiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRkJCMjQ7IiBkPSJNNTExLjg3OSw0NzUuNjg1bC0xMC4xMDMtNTUuNjY2TDM2OC4xMTksMjY0Ljg5OGw0LjA4NCw1Mi42NzhsMTM3LjA3LDE2NS4yMjENCglDNTExLjM1Nyw0ODEuMDcsNTEyLjM2NCw0NzguMzU4LDUxMS44NzksNDc1LjY4NXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRjRBNEE7IiBkPSJNMjU2LjQ4MSwyNy40NjVjLTU3Ljk2MywwLTEwNS4xMiw0Ny4xMTgtMTA1LjEyLDEwNS4wMzRjMCwzNS44MjYsMTcuMDA5LDc0LjI5LDUwLjU1NiwxMTQuMzIyDQoJYzI0LjYzOSwyOS40MDMsNDguOTQzLDQ4LjMxNCw0OS45NjYsNDkuMTA1YzEuMzU0LDEuMDQ3LDIuOTc2LDEuNTcsNC41OTksMS41N2MxLjYyMiwwLDMuMjQ1LTAuNTIzLDQuNTk5LTEuNTcNCgljMS4wMjItMC43OTEsMjUuMzI3LTE5LjcwMiw0OS45NjYtNDkuMTA1YzMzLjU0Ny00MC4wMzIsNTAuNTU2LTc4LjQ5NSw1MC41NTYtMTE0LjMyMg0KCUMzNjEuNjAxLDc0LjU4MywzMTQuNDQ0LDI3LjQ2NSwyNTYuNDgxLDI3LjQ2NXogTTI5NS40MTEsMTMyLjQ5OGMwLDIxLjQ4Mi0xNy40MywzOC44OTgtMzguOTMsMzguODk4DQoJYy0yMS41LDAtMzguOTMtMTcuNDE1LTM4LjkzLTM4Ljg5OHMxNy40My0zOC44OTgsMzguOTMtMzguODk4QzI3Ny45ODEsOTMuNiwyOTUuNDExLDExMS4wMTYsMjk1LjQxMSwxMzIuNDk4eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0U3MzQzRjsiIGQ9Ik0yNTYuNDgxLDI3LjQ2NWMtNC41OTQsMC05LjExOSwwLjI5OC0xMy41NTksMC44NzJjNTEuNTgzLDYuNjY3LDkxLjU2Miw1MC44MzYsOTEuNTYyLDEwNC4xNjINCgljMCwzNS44MjYtMTcuMDA5LDc0LjI5LTUwLjU1NiwxMTQuMzIyYy0xNS44NDUsMTguOTA4LTMxLjU0LDMzLjQ2Ny00MS4wMDUsNDEuNjY5YzUuMjU0LDQuNTUyLDguNTk2LDcuMTU0LDguOTYsNy40MzYNCgljMS4zNTQsMS4wNDcsMi45NzYsMS41Nyw0LjU5OSwxLjU3YzEuNjIyLDAsMy4yNDUtMC41MjMsNC41OTktMS41N2MxLjAyMi0wLjc5MSwyNS4zMjctMTkuNzAyLDQ5Ljk2Ni00OS4xMDUNCgljMzMuNTQ3LTQwLjAzMiw1MC41NTYtNzguNDk1LDUwLjU1Ni0xMTQuMzIyQzM2MS42MDEsNzQuNTgzLDMxNC40NDQsMjcuNDY1LDI1Ni40ODEsMjcuNDY1eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGREI1NjsiIGQ9Ik0yNTkuMDc4LDQ4My44NzRsNDUuMjg1LTIwLjMxNkwyNTYsNDEzLjUwN3Y3MS4wMjZjMCwwLDAsMCwwLjAwMSwwDQoJQzI1Ny4wNDYsNDg0LjUzMywyNTguMDk1LDQ4NC4zMTYsMjU5LjA3OCw0ODMuODc0eiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzFFQTRFOTsiIGQ9Ik00NzEuNjU0LDI1NC4wNzRjLTAuNDAxLTIuMjEyLTEuNzczLTQuMTI4LTMuNzM5LTUuMjIxbC03Ljk3LTQuNDMzbC05MS44MjcsMjAuNDc3bDAsMA0KCQlsMTMzLjY1NiwxNTUuMTIxTDQ3MS42NTQsMjU0LjA3NHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojMUVBNEU5OyIgZD0iTTI1NS45OTksNDg0LjUzM0MyNTYsNDg0LjUzMywyNTYsNDg0LjUzMywyNTUuOTk5LDQ4NC41MzN2LTcuNTA4TDE0MC45NzcsMzAyLjM0NmwtOS44MzcsMTI2Ljg5NQ0KCQlsMTIxLjc4MSw1NC42MzRDMjUzLjkwNCw0ODQuMzE2LDI1NC45NTMsNDg0LjUzMywyNTUuOTk5LDQ4NC41MzN6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+
+            </div>
+            <div class="col-9">
+
+              <p class="mrgtop fnt4">
+                809 HARROW ROAD, NW10 5PA, LONDON, UNITED KINGDOM
+              </p>
+            </div>
+          </div>
+
+
+
+          <!-- ========================================================================== -->
+
+          <div class="row col-12 mrgtop">
+            <div class="col-3 ps2">
+              <img class="img4 mrgtop1"
+                src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDU4IDU4IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJQYWdlLTEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgaWQ9IjAwMy0tLUNhbGwiIGZpbGw9InJnYigwLDAsMCkiIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIj48cGF0aCBpZD0iU2hhcGUiIGQ9Im0yNS4wMTcgMzMuOTgzYy01LjUzNi01LjUzNi02Ljc4Ni0xMS4wNzItNy4wNjgtMTMuMjktLjA3ODc5OTQtLjYxMzI4MjguMTMyMjQ4MS0xLjIyODMxNDQuNTcxLTEuNjY0bDQuNDgtNC40NzhjLjY1OTAxMzYtLjY1ODYwNjYuNzc1OTYyOS0xLjY4NTAyNC4yODItMi40NzVsLTcuMTMzLTExLjA3NmMtLjU0NjQ4MzctLjg3NDc1MTM0LTEuNjY4NTYyNC0xLjE5MDQ1Nzc3LTIuNTkxLS43MjlsLTExLjQ1MSA1LjM5M2MtLjc0NTk0MTE3LjM2NzMwOC0xLjE4NDY5MzM4IDEuMTU5ODU0MDUtMS4xIDEuOTg3LjYgNS43IDMuMDg1IDE5LjcxMiAxNi44NTUgMzMuNDgzczI3Ljc4IDE2LjI1NSAzMy40ODMgMTYuODU1Yy44MjcxNDYuMDg0NjkzNCAxLjYxOTY5Mi0uMzU0MDU4OCAxLjk4Ny0xLjFsNS4zOTMtMTEuNDUxYy40NTk3MzA3LS45MjA0NDc0LjE0NjExNC0yLjAzOTUxODQtLjcyNS0yLjU4N2wtMTEuMDc2LTcuMTMxYy0uNzg5NTI1OS0uNDk0NDc4OS0xLjgxNTg5NjctLjM3ODM2NDItMi40NzUuMjhsLTQuNDc4IDQuNDhjLS40MzU2ODU2LjQzODc1MTktMS4wNTA3MTcyLjY0OTc5OTQtMS42NjQuNTcxLTIuMjE4LS4yODItNy43NTQtMS41MzItMTMuMjktNy4wNjh6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtNDcgMzFjLTEuMTA0NTY5NSAwLTItLjg5NTQzMDUtMi0yLS4wMDkzNjg1LTguMjgwMzg3Ni02LjcxOTYxMjQtMTQuOTkwNjMxNS0xNS0xNS0xLjEwNDU2OTUgMC0yLS44OTU0MzA1LTItMnMuODk1NDMwNS0yIDItMmMxMC40ODg2MTI2LjAxMTU3MzUgMTguOTg4NDI2NSA4LjUxMTM4NzQgMTkgMTkgMCAxLjEwNDU2OTUtLjg5NTQzMDUgMi0yIDJ6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtNTcgMzFjLTEuMTA0NTY5NSAwLTItLjg5NTQzMDUtMi0yLS4wMTU0MzA5LTEzLjgwMDcyMi0xMS4xOTkyNzgtMjQuOTg0NTY5MS0yNS0yNS0xLjEwNDU2OTUgMC0yLS44OTU0MzA1LTItMnMuODk1NDMwNS0yIDItMmMxNi4wMDg5NDcuMDE3NjM1ODcgMjguOTgyMzY0MSAxMi45OTEwNTMgMjkgMjkgMCAuNTMwNDMzLS4yMTA3MTM3IDEuMDM5MTQwOC0uNTg1Nzg2NCAxLjQxNDIxMzYtLjM3NTA3MjguMzc1MDcyNy0uODgzNzgwNi41ODU3ODY0LTEuNDE0MjEzNi41ODU3ODY0eiIvPjwvZz48L2c+PC9zdmc+" />
+            </div>
+
+            <div class="col-9 ps1">
+              <div class="row">
+                <div class="col-4">
+                  <p class""><span class="fnt3">Telephone: </span></p>
+                </div>
+                <div class="col-8">
+                  <p class="fnt4 mrgtop1">
+                    020 8960 5555 </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <p class""><span class="ps3 fnt3">Mobile: </span></p>
+                </div>
+                <div class="col-8">
+                  <p class="fnt4 mrgtop1">
+                    07929 135 878 </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- =====================Section 2======================= -->
+
+        <!-- ================ Facebook ================ -->
+        <div class="col-lg-6">
+
+          <div class="row col-12">
+            <div class="col-3 ps2">
+              <img class="img5" src="https://www.qualitylogoproducts.com/images/_icons/_icon_facebook-smi.svg" />
+
+            </div>
+            <div class="col-9">
+              <a class="txtdec" href="https://www.facebook.com/DreamCut">
+                <p class="mrgtop fnt4">Facebook</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- ================ Instagram ================ -->
+
+          <div class="row col-12 mrgtop">
+            <div class="col-3 ps2">
+              <img class="img5" src="https://www.qualitylogoproducts.com/images/_icons/_icon_instagram-smi.svg" />
+            </div>
+
+            <div class="col-9">
+              <a class="txtdec" href="https://www.instagram.com/dreamcutlondon/">
+                <p class="mrgtop fnt4">Instagram</p>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- ================ Twitter ================ -->
+
+          <div class="row col-12 mrgtop">
+            <div class="col-3 ps2">
+              <img class="img5" src="https://www.qualitylogoproducts.com/images/_icons/_icon_twitter-smi.svg" />
+            </div>
+
+            <div class="col-9">
+              <a class="txtdec" href="https://twitter.com/dreamcutlondon">
+                <p class="mrgtop fnt4">Twitter</p>
+              </a>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- =============================================================-->
+
+
+
+        <!-- =========================================================== -->
+        <hr class="featurette-divider">
+      </div>
+
+
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2021 Dream Cut Company, Inc.
+          <!--&middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>-->
+        </p>
+      </footer>
+  </main>
+
+
+  <script src="css/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
